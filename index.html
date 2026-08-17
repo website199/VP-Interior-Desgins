@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>VP Interior Designs | Luxury Interior Design Studio, Delhi NCR</title>
+<meta name="description" content="VP Interior Designs — luxury interior design and renovation studio in Delhi NCR. False ceilings, wood paneling, WPC lowers, renovation and complete interior design. From blueprint to reality.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230c0b09'/%3E%3Ctext x='50' y='66' font-size='42' fill='%23c19a5b' text-anchor='middle' font-family='Georgia,serif'%3EVP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0c0b09;
+    --ink-2:#141210;
+    --ink-3:#1c1914;
+    --ink-4:#242019;
+    --line:rgba(243,237,225,0.09);
+    --line-strong:rgba(243,237,225,0.16);
+    --gold:#c19a5b;
+    --gold-light:#e3c48d;
+    --gold-dim:rgba(193,154,91,0.14);
+    --ivory:#f3ede1;
+    --stone:#a89c88;
+    --stone-dim:#6f6555;
+    --ff-display:'Fraunces', Georgia, serif;
+    --ff-body:'Manrope', -apple-system, sans-serif;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--ff-body);
+    background:var(--ink);
+    color:var(--ivory);
+    overflow-x:hidden;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;}
+  ul{list-style:none;}
+  button,input,textarea{font-family:inherit;}
+  h1,h2,h3,h4{font-family:var(--ff-display);font-weight:600;line-height:1.15;}
+
+  ::selection{background:var(--gold);color:var(--ink);}
+
+  ::-webkit-scrollbar{width:10px;}
+  ::-webkit-scrollbar-track{background:var(--ink);}
+  ::-webkit-scrollbar-thumb{background:var(--stone-dim);border-radius:10px;}
+  ::-webkit-scrollbar-thumb:hover{background:var(--gold);}
+
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
+    outline:2px solid var(--gold);outline-offset:3px;
+  }
+
+  .container{max-width:1240px;margin:0 auto;padding:0 32px;}
+  section[id]{scroll-margin-top:88px;}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:0.78rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;
+    color:var(--gold);
+  }
+  .eyebrow::before{content:'';width:26px;height:1px;background:var(--gold);}
+
+  .section-header{margin-bottom:64px;max-width:640px;}
+  .section-title{font-size:clamp(2rem,4.2vw,3rem);margin-top:14px;color:var(--ivory);}
+  .section-title em{color:var(--gold);font-style:italic;}
+  .section-sub{margin-top:16px;color:var(--stone);font-size:1.02rem;max-width:520px;}
+
+  section{padding:120px 0;position:relative;}
+
+  /* ---------- reveal system ---------- */
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity 0.9s var(--ease),transform 0.9s var(--ease);}
+  .reveal.active{opacity:1;transform:translateY(0);}
+  .reveal-d1{transition-delay:0.1s;}
+  .reveal-d2{transition-delay:0.2s;}
+  .reveal-d3{transition-delay:0.3s;}
+  .reveal-d4{transition-delay:0.4s;}
+
+  /* ---------- corner-frame signature motif ---------- */
+  .corner-frame{position:relative;}
+  .corner-frame::before,.corner-frame::after{
+    content:'';position:absolute;width:16px;height:16px;
+    border:1px solid var(--gold);opacity:0;
+    transition:opacity 0.4s var(--ease),width 0.4s var(--ease),height 0.4s var(--ease);
+    pointer-events:none;
+  }
+  .corner-frame::before{top:10px;left:10px;border-right:none;border-bottom:none;}
+  .corner-frame::after{bottom:10px;right:10px;border-left:none;border-top:none;}
+  .corner-frame:hover::before,.corner-frame:hover::after{opacity:0.85;width:22px;height:22px;}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:1rem 2.1rem;font-size:0.88rem;font-weight:600;
+    letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;
+    border-radius:2px;cursor:pointer;border:1px solid transparent;
+    transition:transform 0.4s var(--ease),box-shadow 0.4s var(--ease),background 0.4s var(--ease),color 0.4s var(--ease),border-color 0.4s var(--ease);
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--gold);color:var(--ink);}
+  .btn-primary:hover{background:var(--gold-light);transform:translateY(-3px);box-shadow:0 16px 32px rgba(193,154,91,0.28);}
+  .btn-outline{background:transparent;border-color:rgba(243,237,225,0.35);color:var(--ivory);}
+  .btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px);}
+  .btn-wa{background:#25D366;color:#0b1f14;}
+  .btn-wa:hover{background:#2fe375;transform:translateY(-3px);box-shadow:0 16px 32px rgba(37,211,102,0.28);}
+  .btn-full{width:100%;}
+
+  /* ================= PRELOADER ================= */
+  .preloader{
+    position:fixed;inset:0;background:var(--ink);z-index:9999;
+    display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;
+    transition:opacity 0.7s ease,visibility 0.7s ease;
+  }
+  .preloader.loaded{opacity:0;visibility:hidden;pointer-events:none;}
+  .preloader-mark{font-family:var(--ff-display);font-size:2.4rem;color:var(--gold);letter-spacing:0.05em;opacity:0;animation:markIn 1s var(--ease) 0.2s forwards;}
+  .preloader-line{width:120px;height:1px;background:var(--line-strong);position:relative;overflow:hidden;}
+  .preloader-line::after{content:'';position:absolute;inset:0;background:var(--gold);transform:translateX(-100%);animation:loadBar 1.3s var(--ease) 0.3s forwards;}
+  @keyframes markIn{to{opacity:1;}}
+  @keyframes loadBar{to{transform:translateX(0);}}
+
+  /* ================= NAVBAR ================= */
+  .navbar{
+    position:fixed;top:0;left:0;right:0;z-index:900;
+    padding:26px 0;transition:padding 0.4s var(--ease),background 0.4s var(--ease),border-color 0.4s var(--ease);
+    border-bottom:1px solid transparent;
+  }
+  .navbar.scrolled{
+    padding:16px 0;background:rgba(12,11,9,0.86);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .nav-logo{display:flex;align-items:baseline;gap:8px;text-decoration:none;}
+  .nav-logo .mark{font-family:var(--ff-display);font-size:1.5rem;font-weight:700;color:var(--gold);}
+  .nav-logo .text{font-family:var(--ff-display);font-size:1.05rem;letter-spacing:0.02em;color:var(--ivory);}
+  .nav-links{display:flex;align-items:center;gap:40px;}
+  .nav-link{
+    position:relative;text-decoration:none;font-size:0.86rem;font-weight:500;
+    letter-spacing:0.03em;color:var(--ivory);padding-bottom:6px;transition:color 0.3s ease;
+  }
+  .nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width 0.35s var(--ease);}
+  .nav-link:hover,.nav-link.active{color:var(--gold);}
+  .nav-link:hover::after,.nav-link.active::after{width:100%;}
+  .nav-cta{
+    padding:0.7rem 1.5rem;font-size:0.8rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;
+    text-decoration:none;border:1px solid var(--gold);color:var(--gold);border-radius:2px;
+    transition:all 0.35s var(--ease);
+  }
+  .nav-cta:hover{background:var(--gold);color:var(--ink);}
+  .hamburger{
+    display:none;flex-direction:column;justify-content:center;gap:6px;
+    width:32px;height:24px;background:none;border:none;cursor:pointer;z-index:1001;position:relative;
+  }
+  .hamburger span{display:block;width:100%;height:2px;background:var(--ivory);transition:transform 0.35s var(--ease),opacity 0.3s ease;}
+  .hamburger.active span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+  .hamburger.active span:nth-child(2){opacity:0;}
+  .hamburger.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+
+  /* ================= HERO ================= */
+  .hero{
+    min-height:100vh;min-height:100svh;
+    display:flex;align-items:center;position:relative;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(12,11,9,0.55) 0%, rgba(12,11,9,0.92) 70%),
+      linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 100%);
+    overflow:hidden;
+  }
+  .hero-blueprint{position:absolute;inset:0;width:100%;height:100%;opacity:0.55;}
+  .hero-blueprint .bp-line{fill:none;stroke:var(--gold);stroke-width:1;stroke-dasharray:1400;stroke-dashoffset:1400;animation:drawLine 2.6s var(--ease) forwards;}
+  .hero-blueprint .bp-line.d1{animation-delay:0.2s;}
+  .hero-blueprint .bp-line.d2{animation-delay:0.6s;}
+  .hero-blueprint .bp-line.d3{animation-delay:1.0s;}
+  .hero-blueprint .bp-line.d4{animation-delay:1.3s;}
+  .hero-blueprint .bp-dot{opacity:0;transform-origin:center;animation:dotIn 0.6s var(--ease) forwards;}
+  .hero-blueprint .bp-dot.d1{animation-delay:1.6s;}
+  .hero-blueprint .bp-dot.d2{animation-delay:1.75s;}
+  .hero-blueprint .bp-dot.d3{animation-delay:1.9s;}
+  @keyframes drawLine{to{stroke-dashoffset:0;}}
+  @keyframes dotIn{from{opacity:0;transform:scale(0.2);}to{opacity:0.8;transform:scale(1);}}
+
+  .hero-content{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto;padding:140px 32px 60px;}
+  .hero-eyebrow{opacity:0;transform:translateY(20px);animation:heroIn 0.9s var(--ease) 0.3s forwards;}
+  .hero-title{font-size:clamp(2.6rem,8vw,5.6rem);margin-top:22px;color:var(--ivory);}
+  .hero-title span{display:block;opacity:0;transform:translateY(30px);}
+  .hero-title .line1{animation:heroIn 0.9s var(--ease) 0.45s forwards;}
+  .hero-title .line2{font-style:italic;color:var(--gold);animation:heroIn 0.9s var(--ease) 0.6s forwards;}
+  @keyframes heroIn{to{opacity:1;transform:translateY(0);}}
+  .hero-subtext{
+    margin-top:26px;font-size:clamp(1rem,1.6vw,1.2rem);color:var(--stone);letter-spacing:0.02em;
+    opacity:0;transform:translateY(20px);animation:heroIn 0.9s var(--ease) 0.75s forwards;
+  }
+  .hero-buttons{
+    margin-top:44px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;
+    opacity:0;transform:translateY(20px);animation:heroIn 0.9s var(--ease) 0.9s forwards;
+  }
+  .scroll-indicator{
+    position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+    opacity:0;animation:heroIn 0.9s var(--ease) 1.2s forwards;
+  }
+  .scroll-indicator span{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--stone);}
+  .scroll-indicator svg{width:16px;height:16px;color:var(--gold);animation:bounce 2s ease-in-out infinite;}
+  @keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
+
+  /* ================= SERVICES ================= */
+  .services{background:var(--ink);}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+  .service-card{
+    background:var(--ink);padding:44px 34px;transition:background 0.4s ease;
+  }
+  .service-card:hover{background:var(--ink-2);}
+  .service-icon{
+    width:52px;height:52px;border:1px solid var(--line-strong);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--gold);
+    margin-bottom:26px;transition:border-color 0.4s ease,transform 0.4s var(--ease);
+  }
+  .service-card:hover .service-icon{border-color:var(--gold);transform:translateY(-4px);}
+  .service-icon svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;}
+  .service-card h3{font-size:1.28rem;color:var(--ivory);margin-bottom:12px;font-weight:600;}
+  .service-card p{color:var(--stone);font-size:0.94rem;line-height:1.65;}
+
+  /* ================= GALLERY ================= */
+  .gallery{background:var(--ink-2);}
+  .gallery-grid{column-count:3;column-gap:22px;}
+  .gallery-item{
+    break-inside:avoid;margin-bottom:22px;border-radius:6px;overflow:hidden;
+    position:relative;border:1px solid var(--line);
+  }
+  .gallery-placeholder{
+    width:100%;height:100%;
+    background:linear-gradient(150deg,var(--ink-3) 0%,var(--ink-4) 55%,var(--ink-3) 100%);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+    color:var(--stone-dim);transition:transform 0.6s var(--ease);position:relative;
+  }
+  .gallery-placeholder svg{width:30px;height:30px;stroke:var(--stone-dim);fill:none;stroke-width:1.2;transition:stroke 0.4s ease;}
+  .gallery-placeholder span{font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--stone-dim);transition:color 0.4s ease;}
+  .gallery-item::after{
+    content:'';position:absolute;inset:0;border:1px solid transparent;transition:border-color 0.4s ease;pointer-events:none;
+  }
+  .gallery-item:hover .gallery-placeholder{transform:scale(1.04);}
+  .gallery-item:hover .gallery-placeholder svg,.gallery-item:hover .gallery-placeholder span{stroke:var(--gold);color:var(--gold);}
+  .gallery-item:hover::after{border-color:var(--gold-dim);}
+  #img1 .gallery-placeholder{aspect-ratio:3/4;}
+  #img2 .gallery-placeholder{aspect-ratio:4/3;}
+  #img3 .gallery-placeholder{aspect-ratio:1/1;}
+  #img4 .gallery-placeholder{aspect-ratio:4/5;}
+  #img5 .gallery-placeholder{aspect-ratio:16/10;}
+  #vid1 .gallery-placeholder{aspect-ratio:16/9;background:linear-gradient(150deg,var(--ink-4) 0%,#171310 55%,var(--ink-4) 100%);}
+  .play-ring{
+    width:56px;height:56px;border-radius:50%;border:1px solid var(--stone-dim);
+    display:flex;align-items:center;justify-content:center;transition:border-color 0.4s ease,transform 0.4s var(--ease);
+  }
+  .gallery-item:hover .play-ring{border-color:var(--gold);transform:scale(1.08);}
+  .play-ring svg{width:16px;height:16px;margin:0;}
+
+  /* ================= WHY US ================= */
+  .why-us{background:var(--ink);}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+  .why-item{background:var(--ink);padding:40px 30px;transition:background 0.4s ease;}
+  .why-item:hover{background:var(--ink-2);}
+  .why-icon{width:44px;height:44px;color:var(--gold);margin-bottom:22px;}
+  .why-icon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;}
+  .why-item h3{font-size:1.15rem;color:var(--ivory);margin-bottom:10px;font-weight:600;}
+  .why-item p{color:var(--stone);font-size:0.92rem;line-height:1.6;}
+
+  /* ================= CONTACT ================= */
+  .contact{background:var(--ink-2);}
+  .contact-wrapper{display:grid;grid-template-columns:0.85fr 1.15fr;gap:60px;align-items:start;}
+  .contact-info{display:flex;flex-direction:column;gap:16px;}
+  .contact-card{
+    display:flex;align-items:center;gap:18px;padding:22px 24px;
+    background:var(--ink);border:1px solid var(--line);border-radius:6px;
+    text-decoration:none;color:var(--ivory);transition:border-color 0.4s ease,transform 0.4s var(--ease);
+  }
+  .contact-card:hover{border-color:var(--gold-dim);transform:translateX(6px);}
+  .contact-icon{
+    width:46px;height:46px;flex-shrink:0;border-radius:50%;border:1px solid var(--line-strong);
+    display:flex;align-items:center;justify-content:center;color:var(--gold);
+  }
+  .contact-icon svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;}
+  .contact-card h4{font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--stone);font-weight:600;margin-bottom:4px;font-family:var(--ff-body);}
+  .contact-card p{font-size:1.05rem;color:var(--ivory);}
+  .whatsapp-card .contact-icon{color:#25D366;border-color:rgba(37,211,102,0.3);}
+
+  .contact-form{background:var(--ink);border:1px solid var(--line);border-radius:6px;padding:40px;}
+  .contact-form h3{font-size:1.4rem;color:var(--ivory);margin-bottom:24px;}
+  .form-row{margin-bottom:18px;}
+  .form-row input,.form-row textarea{
+    width:100%;background:var(--ink-2);border:1px solid var(--line-strong);border-radius:4px;
+    padding:14px 16px;color:var(--ivory);font-size:0.95rem;transition:border-color 0.3s ease;resize:vertical;
+  }
+  .form-row input::placeholder,.form-row textarea::placeholder{color:var(--stone-dim);}
+  .form-row input:focus,.form-row textarea:focus{border-color:var(--gold);outline:none;}
+  .form-note{font-size:0.8rem;color:var(--stone-dim);margin-top:14px;text-align:center;}
+  .form-error{font-size:0.8rem;color:#e07a6b;margin-top:6px;display:none;}
+  .form-error.show{display:block;}
+
+  /* ================= FLOATING WHATSAPP ================= */
+  .floating-whatsapp{
+    position:fixed;bottom:26px;right:26px;z-index:800;
+    width:58px;height:58px;border-radius:50%;background:#25D366;
+    display:flex;align-items:center;justify-content:center;color:#0b1f14;
+    box-shadow:0 10px 26px rgba(0,0,0,0.4);text-decoration:none;
+  }
+  .floating-whatsapp svg{width:28px;height:28px;position:relative;z-index:2;}
+  .pulse-ring{
+    position:absolute;inset:0;border-radius:50%;background:#25D366;
+    animation:pulse 2.4s ease-out infinite;
+  }
+  @keyframes pulse{0%{transform:scale(1);opacity:0.55;}100%{transform:scale(1.9);opacity:0;}}
+
+  /* ================= FOOTER ================= */
+  .footer{background:var(--ink);border-top:1px solid var(--line);padding:80px 0 0;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:56px;}
+  .footer-logo{display:flex;align-items:baseline;gap:8px;}
+  .footer-logo .mark{font-family:var(--ff-display);font-size:1.6rem;color:var(--gold);font-weight:700;}
+  .footer-logo .text{font-family:var(--ff-display);font-size:1.1rem;color:var(--ivory);}
+  .footer-tagline{margin-top:10px;font-style:italic;font-family:var(--ff-display);color:var(--gold);font-size:1rem;}
+  .footer-desc{margin-top:18px;color:var(--stone);font-size:0.92rem;max-width:320px;line-height:1.7;}
+  .footer h4{font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ivory);margin-bottom:20px;font-family:var(--ff-body);font-weight:700;}
+  .footer-links a{display:block;color:var(--stone);text-decoration:none;font-size:0.92rem;margin-bottom:13px;transition:color 0.3s ease,padding-left 0.3s ease;}
+  .footer-links a:hover{color:var(--gold);padding-left:4px;}
+  .footer-contact p{color:var(--stone);font-size:0.92rem;margin-bottom:13px;}
+  .footer-bottom{border-top:1px solid var(--line);padding:24px 0;text-align:center;}
+  .footer-bottom p{color:var(--stone-dim);font-size:0.82rem;}
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width:1024px){
+    .contact-wrapper{grid-template-columns:1fr;gap:36px;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .footer-brand{grid-column:1 / -1;}
+  }
+  @media (max-width:900px){
+    .nav-links{
+      position:fixed;top:0;right:-100%;width:100%;max-width:380px;height:100vh;height:100svh;
+      background:var(--ink-2);flex-direction:column;justify-content:center;align-items:center;gap:2.2rem;
+      transition:right 0.5s var(--ease);z-index:999;border-left:1px solid var(--line);
+    }
+    .nav-links.active{right:0;}
+    .nav-link{font-size:1.1rem;}
+    .nav-cta{display:none;}
+    .hamburger{display:flex;}
+    body.menu-open{overflow:hidden;}
+  }
+  @media (max-width:768px){
+    section{padding:80px 0;}
+    .container{padding:0 22px;}
+    .section-header{margin-bottom:44px;}
+    .hero-content{padding:130px 22px 50px;}
+    .hero-buttons{flex-direction:column;width:100%;}
+    .hero-buttons .btn{width:100%;}
+    .gallery-grid{column-count:2;column-gap:16px;}
+    .gallery-item{margin-bottom:16px;}
+    .contact-form{padding:28px 22px;}
+    .footer-grid{grid-template-columns:1fr;gap:36px;padding-bottom:40px;}
+    .footer{padding-top:56px;}
+    .floating-whatsapp{width:52px;height:52px;bottom:18px;right:18px;}
+    .floating-whatsapp svg{width:25px;height:25px;}
+  }
+  @media (max-width:480px){
+    .gallery-grid{column-count:1;}
+    .service-card,.why-item{padding:34px 26px;}
+    .contact-card{padding:18px;}
+    .nav-logo .text{display:none;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{
+      animation-duration:0.01ms !important;animation-iteration-count:1 !important;
+      transition-duration:0.01ms !important;scroll-behavior:auto !important;
+    }
+    .reveal{opacity:1;transform:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">VP</div>
+  <div class="preloader-line"></div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">
+      <span class="mark">VP</span>
+      <span class="text">Interior Designs</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#why-us" class="nav-link">Why Us</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <svg class="hero-blueprint" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path class="bp-line d1" d="M -40 120 L 780 120 L 780 680 L -40 680" />
+    <path class="bp-line d1" d="M 480 120 L 480 400 L 780 400" />
+    <path class="bp-line d2" d="M 560 400 A 80 80 0 0 1 480 480" />
+    <path class="bp-line d3" d="M 860 150 h44 v44 h-44z M 916 150 h44 v44 h-44z M 972 150 h44 v44 h-44z M 860 206 h44 v44 h-44z M 916 206 h44 v44 h-44z M 972 206 h44 v44 h-44z" />
+    <path class="bp-line d4" d="M 120 730 L 720 730 M 120 720 L 120 740 M 720 720 L 720 740 M 400 720 L 400 740" />
+    <circle class="bp-dot d1" cx="882" cy="228" r="4" fill="var(--gold)" />
+    <circle class="bp-dot d2" cx="994" cy="228" r="4" fill="var(--gold)" />
+    <circle class="bp-dot d3" cx="650" cy="250" r="4" fill="var(--gold)" />
+  </svg>
+  <div class="hero-content">
+    <span class="eyebrow hero-eyebrow">Interior Design Studio · Delhi NCR</span>
+    <h1 class="hero-title">
+      <span class="line1">Luxury Designed</span>
+      <span class="line2">Spaces</span>
+    </h1>
+    <p class="hero-subtext">From Blueprint to Reality — Delhi NCR</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+      <a href="#gallery" class="btn btn-outline">View Our Work</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Services</span>
+      <h2 class="section-title">What We Design &amp; Build</h2>
+      <p class="section-sub">Five specialisms, one team — every project handled in-house from first sketch to final finish.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal corner-frame">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M7 4h10l-2 5H9L7 4z"/><line x1="12" y1="9" x2="12" y2="15"/><circle cx="12" cy="18" r="2.5"/></svg></div>
+        <h3>False Ceiling Design</h3>
+        <p>POP and gypsum false ceilings with cove and profile lighting, designed to add depth and drama to any room.</p>
+      </div>
+      <div class="service-card reveal corner-frame">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="3.4" rx="0.6"/><rect x="3" y="10.3" width="18" height="3.4" rx="0.6"/><rect x="3" y="15.6" width="18" height="3.4" rx="0.6"/></svg></div>
+        <h3>Wood Work &amp; Paneling</h3>
+        <p>Custom wood paneling, wardrobes and joinery in veneers and laminates, built to last for years.</p>
+      </div>
+      <div class="service-card reveal corner-frame">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+        <h3>WPC Lowers</h3>
+        <p>Water-resistant WPC panelling for kitchen and bathroom lowers, built to handle daily wear near water.</p>
+      </div>
+      <div class="service-card reveal corner-frame">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6L3 18l3 3 6.1-6.1a4 4 0 0 0 5.6-5.6l-2.5 2.5-2-2 2.5-2.5z"/></svg></div>
+        <h3>Renovation</h3>
+        <p>Full home and office renovations, from civil work to final finishes, managed start to finish.</p>
+      </div>
+      <div class="service-card reveal corner-frame">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Complete Interior Design</h3>
+        <p>Turnkey interior design — space planning, material selection and styling, handled end to end.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Portfolio</span>
+      <h2 class="section-title">Spaces We've <em>Transformed</em></h2>
+      <p class="section-sub">A look at recent work — swap in your own project photography here.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal" id="img1">
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Project 01</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal" id="img2">
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Project 02</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal" id="img3">
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Project 03</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal" id="vid1">
+        <div class="gallery-placeholder">
+          <div class="play-ring"><svg viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><path d="M9 7l9 5-9 5V7z"/></svg></div>
+          <span>Watch Video</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal" id="img4">
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Project 04</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal" id="img5">
+        <div class="gallery-placeholder">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>Project 05</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Why VP Interior Designs</span>
+      <h2 class="section-title">The VP Standard</h2>
+      <p class="section-sub">What clients across Delhi NCR consistently tell us they value most.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9l4-6z"/><path d="M2 9h20M9 3l3 6-3 12M15 3l-3 6 3 12"/></svg></div>
+        <h3>Luxury Designs</h3>
+        <p>Every project is designed around your taste, not a fixed template — from material selection to the final finish.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>On-Time Delivery</h3>
+        <p>Clear project timelines, tracked from day one, so your space is ready when we say it will be.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M6.5 4h8.5M6.5 8h8.5M6.5 4c3.2 0 5.3 1.6 5.3 4.2s-2.1 4.2-5.3 4.2H6l8 8"/></svg></div>
+        <h3>Budget Friendly</h3>
+        <p>Transparent costing with no hidden charges — premium finishes that respect your budget.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.5-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M15.3 14.3c2.5.5 4.2 2.6 4.2 5.7"/></svg></div>
+        <h3>Expert Team</h3>
+        <p>In-house designers, carpenters and site supervisors — no subcontracted guesswork.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-title">Start Your Project</h2>
+      <p class="section-sub">Call, WhatsApp, or send us a few details and we'll get back to you.</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <a href="tel:+919716929482" class="contact-card">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div>
+            <h4>Call Us</h4>
+            <p>+91 97169 29482</p>
+          </div>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <h4>Location</h4>
+            <p>Delhi NCR</p>
+          </div>
+        </div>
+        <a href="https://wa.me/919716929482?text=Hi%2C%20I%27m%20interested%20in%20your%20interior%20design%20services." target="_blank" rel="noopener" class="contact-card whatsapp-card">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 5L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.9-4.45 9.9-9.91S17.5 2 12.04 2zm0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.4c0-4.55 3.7-8.22 8.25-8.22zm-4.5 4.65c-.15 0-.4.06-.61.29-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.12.15 1.6 2.5 3.9 3.45 1.9.79 2.3.63 2.7.6.42-.04 1.34-.55 1.53-1.08.19-.53.19-.98.13-1.08-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.96-.14.16-.28.18-.53.06-.24-.12-1.02-.38-1.95-1.2-.72-.65-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.5.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.47z"/></svg></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>Chat with us instantly</p>
+          </div>
+        </a>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3>Request a Free Quote</h3>
+        <div class="form-row">
+          <input type="text" id="formName" placeholder="Your name" required>
+          <p class="form-error" id="nameError">Enter your name.</p>
+        </div>
+        <div class="form-row">
+          <input type="tel" id="formPhone" placeholder="Phone number" required>
+          <p class="form-error" id="phoneError">Enter a valid 10-digit phone number.</p>
+        </div>
+        <div class="form-row">
+          <textarea id="formMessage" rows="4" placeholder="Tell us about your project"></textarea>
+        </div>
+        <button type="submit" class="btn btn-wa btn-full">Send Inquiry on WhatsApp</button>
+        <p class="form-note">This opens WhatsApp with your details pre-filled to send to us.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/919716929482?text=Hi%2C%20I%27m%20interested%20in%20your%20interior%20design%20services." target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+  <span class="pulse-ring" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 5L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.9-4.45 9.9-9.91S17.5 2 12.04 2zm0 1.67a8.2 8.2 0 0 1 5.83 2.42 8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.4c0-4.55 3.7-8.22 8.25-8.22zm-4.5 4.65c-.15 0-.4.06-.61.29-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.12.15 1.6 2.5 3.9 3.45 1.9.79 2.3.63 2.7.6.42-.04 1.34-.55 1.53-1.08.19-.53.19-.98.13-1.08-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.96-.14.16-.28.18-.53.06-.24-.12-1.02-.38-1.95-1.2-.72-.65-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.5.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.47z"/></svg>
+</a>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="mark">VP</span>
+          <span class="text">Interior Designs</span>
+        </div>
+        <p class="footer-tagline">Luxury Designed Spaces</p>
+        <p class="footer-desc">Crafting refined, elegant interiors across Delhi NCR — from first blueprint to final handover.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Delhi NCR, India</p>
+        <p>+91 97169 29482</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 VP Interior Designs. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // preloader
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      document.getElementById('preloader').classList.add('loaded');
+    }, 350);
+  });
+
+  // navbar scroll state + active link tracking
+  var navbar = document.getElementById('navbar');
+  var sections = document.querySelectorAll('section[id]');
+  var navLinkItems = document.querySelectorAll('.nav-link');
+  function onScroll(){
+    if(window.scrollY > 40){ navbar.classList.add('scrolled'); }
+    else{ navbar.classList.remove('scrolled'); }
+    var current = 'home';
+    sections.forEach(function(sec){
+      if(window.scrollY >= sec.offsetTop - 160){ current = sec.getAttribute('id'); }
+    });
+    navLinkItems.forEach(function(link){
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  // mobile menu
+  var hamburger = document.getElementById('hamburger');
+  var navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', function(){
+    var open = hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinkItems.forEach(function(link){
+    link.addEventListener('click', function(){
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.classList.remove('menu-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // scroll reveal
+  var revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ observer.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('active'); });
+  }
+
+  // stagger service / why-us / gallery cards
+  document.querySelectorAll('.services-grid .service-card').forEach(function(el,i){ el.style.transitionDelay = (i*0.08) + 's'; });
+  document.querySelectorAll('.why-grid .why-item').forEach(function(el,i){ el.style.transitionDelay = (i*0.08) + 's'; });
+  document.querySelectorAll('.gallery-grid .gallery-item').forEach(function(el,i){ el.style.transitionDelay = (i*0.06) + 's'; });
+
+  // contact form -> whatsapp
+  var form = document.getElementById('contactForm');
+  var nameError = document.getElementById('nameError');
+  var phoneError = document.getElementById('phoneError');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('formName').value.trim();
+    var phone = document.getElementById('formPhone').value.trim();
+    var message = document.getElementById('formMessage').value.trim();
+    var phoneDigits = phone.replace(/\D/g,'');
+    var valid = true;
+
+    if(name.length < 2){ nameError.classList.add('show'); valid = false; } else { nameError.classList.remove('show'); }
+    if(phoneDigits.length < 10){ phoneError.classList.add('show'); valid = false; } else { phoneError.classList.remove('show'); }
+
+    if(!valid){ return; }
+
+    var text = 'Hi, I\'m ' + name + ' (' + phone + ').';
+    if(message){ text += ' ' + message; }
+    else { text += ' I\'m interested in your interior design services.'; }
+    var waUrl = 'https://wa.me/919716929482?text=' + encodeURIComponent(text);
+    window.open(waUrl, '_blank');
+    form.reset();
+  });
+})();
+</script>
+
+</body>
+</html>
